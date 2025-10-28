@@ -1,0 +1,72 @@
+.box{
+    padding: 20px;
+}
+
+.box__padre{
+    display: flex;
+    gap: 100px;
+} 
+
+.box__hijo{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    background: rgb(216, 216, 216);
+    padding: 15px 60px 10px 40px;
+}
+
+.box__hijoTitulo{
+    background-color: white;
+    display: flex;
+    margin: 5px 100px 20px 50px ;
+    justify-content: center;
+}
+
+.box__hijo-box1{
+    display: grid;
+    grid-template-columns: repeat(4,150px);
+    grid-template-rows: 250px 190px;
+    gap: 20px 20px;
+    background-color: rgb(175, 175, 175);
+    justify-content:end;
+    padding: 40px 20px 40px 50px ;
+
+}
+.box__hijo-box1-item--1{
+    grid-area: 1 / 1 / 3 / 3;
+    background-color: aqua;
+}
+.box__hijo-box1-item--2{
+    grid-area: 1 / 3 / 2 / 5;
+    background-color: aqua;
+}
+
+.box__hijo-box1-item--3{
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: aqua;
+}
+
+.box__hijo-box1-item--4{
+    grid-area: 2 / 4 / 3 / 5;
+    background-color: aqua;
+}
+
+.box__hijo-box2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 25px;
+    background-color: rgb(175, 175, 175);
+
+}
+
+.box__hijo-box2 .img{
+    width: 60%;
+    border-radius: 100%;
+}
+
+.box__hijo-box2-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
